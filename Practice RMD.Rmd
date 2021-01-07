@@ -10,3 +10,10 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 ```
 
+```{r}
+starwars <- starwars
+
+ggplot(data = starwars, aes(x = mass, y = height))+ 
+  geom_point(color = "purple")
+```
+
